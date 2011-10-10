@@ -136,7 +136,7 @@ if test -n "$export_dynamic"; then
   GLIB_LIBS=`echo $GLIB_LIBS | sed -e "s/$export_dynamic//"`
 fi
 
-PKG_CHECK_MODULES(PYGOBJECT, [pygobject-2.0 >= pygobject_required_version])
+PKG_CHECK_MODULES(PYGOBJECT, [pygobject-2.0 >= pygobject_required_version pygobject-2.0 < 2.90])
 
 PYGOBJECT_INCLUDEDIR=`$PKG_CONFIG --variable=pygtkincludedir pygobject-2.0`
 AC_SUBST(PYGOBJECT_INCLUDEDIR)
