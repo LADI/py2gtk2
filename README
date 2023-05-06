@@ -43,7 +43,7 @@ Requirements
 ============
   * C compiler (GCC, MSVC and mingw supported)
   * Python 2.3.5 or higher
-  * PyGObject 2.21.3 or higher
+  * PyGObject 2.21.3 to 2.28.x (See PyGObject Note below)
   * Pycairo 1.0.2 or higher
   * Glib 2.8.0 or higher
   * GTK+ 2.8.0 or higher (optional) or
@@ -72,6 +72,15 @@ This release is supporting the following GTK+ releases:
   2.24.x
 
 To include support for the 2.10 API you'll need GTK+ 2.10.0 etc.
+
+PyGObject Note:
+
+PyGtk will not work with PyGObject-3 (which includes 2.28.99), but you
+can install PyGObject-2.28 in parallel with PyGObject-3 if you
+configure it with --without-introspection.
+
+If you're using Gtk+-3 and PyGObject-3 then you have no need of PyGtk;
+python bindings are provided directly by those packages.
 
 Copyright Information
 =====================
