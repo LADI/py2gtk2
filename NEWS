@@ -1,5 +1,5 @@
-pygtk-2.24.1 XX-XXX-2011
-    -
+py2gtk2-2.24.1 XX-XXX-20XX
+    - Drop the PangoFont find_shaper virtual method (Jordan Petridis)
 
 pygtk-2.24.0 01-Apr-2011
     - Many many documentation improvements and updates (Dieter Verfaillie)
